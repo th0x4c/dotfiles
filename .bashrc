@@ -8,6 +8,7 @@ case $OSTYPE in
     export DISPLAY=:0.0
     export MANPATH=/opt/local/share/man:$MANPATH
 
+    alias ls='ls -G'
     alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
     ;;
 
@@ -27,10 +28,14 @@ case $OSTYPE in
     export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
     export NLS_LANG=Japanese_Japan.UTF8
     export NLS_DATE_FORMAT="YYYY-MM-DD HH24:MI:SS"
+
+    alias ls='ls --color=auto'
     ;;
 
   cygwin* )
     export PATH=/usr/local/emacs/22.2/bin:/cygdrive/c/ruby/bin:$PATH
+
+    alias ls='ls --color=auto'
     ;;
 
   * )
