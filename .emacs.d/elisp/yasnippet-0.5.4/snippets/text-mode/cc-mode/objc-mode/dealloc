@@ -1,0 +1,8 @@
+#name : - (void)dealloc { ... }
+# --
+- (void)dealloc
+{
+  $0
+  [foo release];
+  [super dealloc];
+}

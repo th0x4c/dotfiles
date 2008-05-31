@@ -1,0 +1,3 @@
+#name : [[... alloc] init];
+# --
+[[${1:foo} alloc] init];

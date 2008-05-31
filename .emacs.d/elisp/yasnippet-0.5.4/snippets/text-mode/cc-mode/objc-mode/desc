@@ -1,0 +1,6 @@
+#name : - (NSString *)description { ... }
+# --
+- (NSString *)description
+{
+  return [NSString stringWithFormat:@"${1:%@}", ${2:[self foo]}];
+}

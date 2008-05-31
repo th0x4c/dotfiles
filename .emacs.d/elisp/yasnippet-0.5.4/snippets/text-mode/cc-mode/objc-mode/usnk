@@ -1,0 +1,13 @@
+#name : - (void)unableToSetNilForKey { ... }
+# --
+- (void)unableToSetNilForKey:(NSString *)key
+{
+  if ([key isEqual:@"${1:foo}"])
+  {
+    [self set${1:$(upcase-initials text)}:$0];
+  }
+  else
+  {
+    [super unableToSetNilForKey:key];
+  }
+}
