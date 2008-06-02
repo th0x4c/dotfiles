@@ -8,8 +8,15 @@ case $OSTYPE in
     export DISPLAY=:0.0
     export MANPATH=/opt/local/share/man:$MANPATH
 
+    export ORACLE_HOME=/opt/oracle/instantclient_10_2
+    export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib:$DYLD_LIBRARY_PATH
+    export TNS_ADMIN=$HOME/.oracle.d/network/admin
+    export NLS_LANG=Japanese_Japan.UTF8
+    export NLS_DATE_FORMAT="YYYY-MM-DD HH24:MI:SS"
+
     alias ls='ls -G'
     alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+    alias sqlplus='/opt/oracle/instantclient_10_2/sqlplus'
     ;;
 
   linux* )
