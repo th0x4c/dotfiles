@@ -15,6 +15,8 @@
 ;; ウィンドウを縦分割時に文字を右端で折り返す
 (setq truncate-partial-width-windows nil)
 
+;; 列番号を表示
+(column-number-mode t)
 
 (setq load-path (cons "~/.emacs.d/init" load-path))
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
