@@ -1,0 +1,11 @@
+#name : (cc-mode header)
+# --
+/*
+ *  `(file-name-nondirectory (buffer-file-name))`
+ *  ${1:__ProjectName__}
+ *
+ *  Created by `(user-full-name)` on `(format-time-string "%m/%d/%y")`.
+ *  Copyright `(format-time-string "%Y")` ${2:__MyCompanyName__}. All rights reserved.
+ */
+
+$0
