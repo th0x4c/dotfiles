@@ -1,0 +1,9 @@
+#name : malloc(sizeof(...))
+# --
+${1:pointer} = malloc(sizeof(${2:struct}));
+if ($1 == NULL)
+{
+  $0
+  fprintf(stdout, "Cannot malloc $2\n");
+  exit(1);
+}
