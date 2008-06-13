@@ -3,6 +3,8 @@ defhstatus "n:t"
 markkeys h=:l=:$=
 caption always "%{= wg} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wb}%m/%d/%Y %{=b wm}%c"
 
+defscrollback 2048
+
 bind  paste .
 bind o focus
 
@@ -11,5 +13,5 @@ bind -c REGION 1 only
 bind -c REGION 0 remove
 bind -c REGION o focus
 bind -c REGION \^ resize
-bind x command -c REGION
+bind  command -c REGION
 
