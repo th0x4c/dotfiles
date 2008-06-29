@@ -26,6 +26,7 @@
   (load "init-windows-nt"))
 
 ;; lisp 読み込み
+(load "init-bm")
 (load "init-cc-mode")
 (load "init-htmlize")
 (load "init-muse")
