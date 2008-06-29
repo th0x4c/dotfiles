@@ -30,6 +30,7 @@
 (load "init-cc-mode")
 (load "init-htmlize")
 (load "init-muse")
+(load "init-whitespace")
 (load "init-windows")
 (load "init-xcscope")
 (load "init-yasnippet")
