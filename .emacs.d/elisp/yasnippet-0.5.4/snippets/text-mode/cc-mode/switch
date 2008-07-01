@@ -1,0 +1,10 @@
+#name : switch (...) { ... }
+# --
+switch (${1:expression})
+{
+case ${2:const-expr}:
+  $0
+  break;
+default:
+  break;
+}

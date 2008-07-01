@@ -1,0 +1,5 @@
+#name : case ...: ... break;
+# --
+case ${1:const-expr}:
+  $0
+  break;
