@@ -1,6 +1,8 @@
 ;; anything
 (require 'anything-config)
 
+(global-set-key "\C-x\C-a" 'anything)
+
 (define-key anything-map "\C-\M-n" 'anything-next-source)
 (define-key anything-map "\C-\M-p" 'anything-previous-source)
 
@@ -54,12 +56,40 @@
            (goto-line (string-to-int (match-string 1 candidate)))
            (set-window-start (get-buffer-window anything-current-buffer) (point)))))))
 
+(defvar anything-c-source-occur
+  '((name . "Occur")
+    (init . (lambda ()
+              (setq anything-occur-current-buffer
+                    (current-buffer))))
+    (candidates . (lambda ()
+                    (let ((anything-occur-buffer (get-buffer-create "*Anything Occur*")))
+                      (with-current-buffer anything-occur-buffer
+                        (occur-mode)
+                        (erase-buffer)
+                        (let ((count (occur-engine anything-pattern
+                                                   (list anything-occur-current-buffer) anything-occur-buffer
+                                                   list-matching-lines-default-context-lines case-fold-search
+                                                   list-matching-lines-buffer-name-face
+                                                   nil list-matching-lines-face
+                                                   (not (eq occur-excluded-properties t)))))
+                          (when (> count 0)
+                            (setq next-error-last-buffer anything-occur-buffer)
+                            (cdr (split-string (buffer-string) "\n" t))))))))
+    (action . (("Goto line" . (lambda (candidate)
+                                (with-current-buffer "*Anything Occur*"
+                                  (search-forward candidate))
+                                (goto-line (string-to-number candidate) anything-occur-current-buffer)))))
+    (requires-pattern . 3)
+    (volatile)
+    (delayed)))
 
 (setq anything-sources
       (list anything-c-source-buffers
             anything-c-source-bm
             anything-c-source-bookmarks
             anything-c-source-ctags
+            anything-c-source-occur
+;            anything-c-source-files-in-current-dir
 ;            anything-c-source-file-name-history
 ;            anything-c-source-info-pages
 ;            anything-c-source-man-pages
