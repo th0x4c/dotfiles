@@ -18,6 +18,9 @@
 ;; 列番号を表示
 (column-number-mode t)
 
+;; convenient switching between buffers using substrings of their names
+(iswitchb-mode t)
+
 (setq load-path (cons "~/.emacs.d/init" load-path))
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
 
@@ -28,6 +31,7 @@
 ;; lisp 読み込み
 (load "init-bm")
 (load "init-cc-mode")
+(load "init-anything")
 (load "init-htmlize")
 (load "init-muse")
 (load "init-whitespace")
