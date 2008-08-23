@@ -1,0 +1,9 @@
+#name : /** ... */
+# --
+/**
+ *  ${1:Brief description.}
+ *  $0
+ *  @param[in,out] arg1 Description.
+ *  @param[in]     arg2 Description.
+ *  @return Result description.
+ */
