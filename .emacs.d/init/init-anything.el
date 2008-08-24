@@ -1,7 +1,7 @@
 ;; anything
 (require 'anything-config)
 
-(global-set-key "\C-x\C-a" 'anything)
+(global-set-key "\C-x\C-a\C-a" 'anything)
 
 (define-key anything-map "\C-\M-n" 'anything-next-source)
 (define-key anything-map "\C-\M-p" 'anything-previous-source)
