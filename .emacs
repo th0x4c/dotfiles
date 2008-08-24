@@ -33,6 +33,7 @@
 (load "init-cc-mode")
 (load "init-anything")
 (load "init-htmlize")
+(load "init-linum")
 (load "init-muse")
 (load "init-whitespace")
 (load "init-windows")
