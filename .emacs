@@ -21,6 +21,10 @@
 ;; convenient switching between buffers using substrings of their names
 (iswitchb-mode t)
 
+;; gdb
+;; display output from the debugged program in a separate buffer.
+(setq gdb-use-separate-io-buffer t)
+
 (setq load-path (cons "~/.emacs.d/init" load-path))
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
 
