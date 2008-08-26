@@ -15,3 +15,5 @@ bind -c REGION o focus
 bind -c REGION \^ resize
 bind  command -c REGION
 
+defbce on
+term xterm-color
