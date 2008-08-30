@@ -35,7 +35,7 @@
 ;; lisp 読み込み
 (load "init-bm")
 (load "init-cc-mode")
-(load "init-anything")
+(load "init-color-moccur")
 (load "init-htmlize")
 (load "init-linum")
 (load "init-muse")
@@ -43,3 +43,4 @@
 (load "init-windows")
 (load "init-xcscope")
 (load "init-yasnippet")
+(load "init-anything")
