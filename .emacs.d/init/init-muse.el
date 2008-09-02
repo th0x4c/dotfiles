@@ -36,4 +36,4 @@
 (setq muse-html-style-sheet
       (concat "<link rel=\"stylesheet\" type=\"text/css\""
               " charset=\"utf-8\" media=\"all\""
-              " href=\"../style.css\" />"))
+              " href=\"./style.css\" />"))
