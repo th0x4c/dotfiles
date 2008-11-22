@@ -1,5 +1,5 @@
 PS1='\h:\W \u\$ '
-export PATH=$PATH:$HOME/bin
+export PATH=$HOME/local/bin:$PATH
 alias screen='screen -U'
 
 case $OSTYPE in
@@ -36,7 +36,11 @@ case $OSTYPE in
     export NLS_LANG=Japanese_Japan.UTF8
     export NLS_DATE_FORMAT="YYYY-MM-DD HH24:MI:SS"
 
-    alias ls='ls --color=auto'
+    if [ $TERM = "dumb" ];then
+      alias ls='ls -F'
+    else
+      alias ls='ls --color=auto'
+    fi
     ;;
 
   cygwin* )
