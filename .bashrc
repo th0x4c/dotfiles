@@ -17,6 +17,10 @@ case $OSTYPE in
     alias ls='ls -G'
     alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
     alias sqlplus='/opt/oracle/instantclient_10_2/sqlplus'
+
+    if [ -f /opt/local/etc/bash_completion ]; then
+        . /opt/local/etc/bash_completion
+    fi
     ;;
 
   linux* )
