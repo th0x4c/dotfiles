@@ -19,7 +19,7 @@ case $OSTYPE in
     alias sqlplus='/opt/oracle/instantclient_10_2/sqlplus'
 
     if [ -f /opt/local/etc/bash_completion ]; then
-        . /opt/local/etc/bash_completion
+      . /opt/local/etc/bash_completion
     fi
     ;;
 
@@ -30,20 +30,40 @@ case $OSTYPE in
     fi
 
     # User specific aliases and functions
-    export DISPLAY=172.16.167.1:0.0
+    case `lsb_release -i` in
+      *Ubuntu* )
+        export DISPLAY=:0.0
+        export ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
+        export ORACLE_SID=XE
+        ;;
 
-    export ORACLE_BASE=/u01/app/oracle
-    export ORACLE_SID=orcl11
-    export ORACLE_HOME=$ORACLE_BASE/product/11.1.0/db_1
-    export PATH=$ORACLE_HOME/bin:$PATH
-    export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+      *CentOS* )
+        export DISPLAY=172.16.167.1:0.0
+        export ORACLE_BASE=/u01/app/oracle
+        export ORACLE_SID=orcl11
+        export ORACLE_HOME=$ORACLE_BASE/product/11.1.0/db_1
+        ;;
+      
+      * )
+        ;;
+    esac
+
+    if [ -n "$ORACLE_HOME" ];then
+      export PATH=$ORACLE_HOME/bin:$PATH
+      export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+    fi
     export NLS_LANG=Japanese_Japan.UTF8
     export NLS_DATE_FORMAT="YYYY-MM-DD HH24:MI:SS"
 
-    if [ $TERM = "dumb" ];then
+    if [ $TERM == "dumb" ];then
       alias ls='ls -F'
     else
       alias ls='ls --color=auto'
+    fi
+
+    # enable programmable completion features
+    if [ -f /etc/bash_completion ]; then
+      . /etc/bash_completion
     fi
     ;;
 
