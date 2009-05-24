@@ -40,6 +40,7 @@
 (load "init-linum")
 (load "init-muse")
 (load "init-ruby")
+(load "init-sh-script")
 (load "init-whitespace")
 (load "init-windows")
 (load "init-xcscope")
