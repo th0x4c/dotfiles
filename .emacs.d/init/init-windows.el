@@ -1,4 +1,6 @@
 ;; windows
+(add-to-list 'load-path "~/.emacs.d/elisp/windows")
+
 (require 'windows)
 (win:startup-with-window)
 (define-key ctl-x-map "C" 'see-you-again)

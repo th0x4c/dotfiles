@@ -1,6 +1,6 @@
 ;; yasnippet
-(setq load-path (cons "~/.emacs.d/elisp/yasnippet-0.5.4" load-path))
+(add-to-list 'load-path "~/.emacs.d/elisp/yasnippet")
 
 (require 'yasnippet) ;; not yasnippet-bundle
 (yas/initialize)
-(yas/load-directory "~/.emacs.d/elisp/yasnippet-0.5.4/snippets/")
+(yas/load-directory "~/.emacs.d/elisp/yasnippet/snippets/")

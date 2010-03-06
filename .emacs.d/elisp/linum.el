@@ -56,7 +56,7 @@ should evaluate to a string to be shown on that line. See also
   :type 'sexp)
 
 (defface linum
-  '((t :inherit shadow))
+  '((t :inherit (shadow default)))
   "Face for displaying line numbers in the display margin."
   :group 'linum)
 
@@ -156,11 +156,9 @@ and you have to scroll or press C-l to update the numbers."
                             (throw 'visited t))))))
         (setq width (max width (+ (length str) 1)))
         (unless visited
-          (let (ov)
-            (if (null linum-available)
-                (setq ov (make-overlay (point) (point)))
-              (setq ov (pop linum-available))
-              (move-overlay ov (point) (point)))
+          (let ((ov (if (null linum-available)
+                        (make-overlay (point) (point))
+                      (move-overlay (pop linum-available) (point) (point)))))
             (push ov linum-overlays)
             (overlay-put ov 'before-string
                          (propertize " " 'display `((margin left-margin) ,str)))

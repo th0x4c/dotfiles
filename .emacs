@@ -25,25 +25,26 @@
 ;; display output from the debugged program in a separate buffer.
 (setq gdb-use-separate-io-buffer t)
 
-(setq load-path (cons "~/.emacs.d/init" load-path))
-(setq load-path (cons "~/.emacs.d/elisp" load-path))
+(add-to-list 'load-path "~/.emacs.d/init")
+(add-to-list 'load-path "~/.emacs.d/elisp")
 
 ;; OS 特有の Custom 設定
 (when run-windows-nt
   (load "init-windows-nt"))
 
+;; TODO
+;; なぜか Mac OS X では color-theme がうまく動かない
+(unless run-darwin
+  (load "init-color-theme"))
+
 ;; lisp 読み込み
 (load "init-bm")
 (load "init-cc-mode")
-(load "init-color-moccur")
-(load "init-htmlize")
 (load "init-linum")
 (load "init-muse")
 (load "init-ruby")
 (load "init-sh-script")
-(load "init-whitespace")
 (load "init-windows")
 (load "init-xcscope")
 (load "init-yasnippet")
-(load "init-anything-c-yasnippet")
 (load "init-anything")

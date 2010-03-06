@@ -1,4 +1,5 @@
 ;; anything
+(add-to-list 'load-path "~/.emacs.d/elisp/anything")
 (require 'anything-config)
 
 (global-set-key "\C-x\C-a\C-a" 'anything)

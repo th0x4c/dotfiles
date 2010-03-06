@@ -1,5 +1,5 @@
 ;; muse
-(setq load-path (cons "~/.emacs.d/elisp/muse-3.12/lisp" load-path))
+(add-to-list 'load-path "~/.emacs.d/elisp/muse/lisp")
 
 (require 'muse-mode)     ; load authoring mode
 
