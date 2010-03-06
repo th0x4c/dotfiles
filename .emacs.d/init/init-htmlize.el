@@ -1,2 +1,0 @@
-;; htmlize
-(require 'htmlize)
