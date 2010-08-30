@@ -1,0 +1,8 @@
+#name : # ... # 
+# --
+# ${1:Brief description.}
+# $0
+# @param [Object, Foo, #method]     arg1 Description.
+# @param [Array<Foo, Bar>]          arg2 Description.
+# @param [Hash{String => Foo, Bar}] arg3 Description.
+# @return [Object] Result description.
