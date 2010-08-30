@@ -10,6 +10,7 @@ case $OSTYPE in
 
     export ORACLE_HOME=/opt/oracle/instantclient_10_2
     export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib:$DYLD_LIBRARY_PATH
+    export CLASSPATH=$ORACLE_HOME/ojdbc14.jar:$CLASSPATH
     export TNS_ADMIN=$HOME/.oracle.d/network/admin
     export NLS_LANG=Japanese_Japan.UTF8
     export NLS_DATE_FORMAT="YYYY-MM-DD HH24:MI:SS"
