@@ -16,7 +16,8 @@
 (menu-bar-mode -1)
 
 ;; ツールバーを表示しない
-(tool-bar-mode -1)
+(if window-system
+  (tool-bar-mode -1))
 
 ;; ウィンドウを縦分割時に文字を右端で折り返す
 (setq truncate-partial-width-windows nil)
