@@ -12,6 +12,12 @@
 ;; 起動時にメッセージを表示しない
 (setq inhibit-startup-message t)
 
+;; メニューバーを表示しない
+(menu-bar-mode -1)
+
+;; ツールバーを表示しない
+(tool-bar-mode -1)
+
 ;; ウィンドウを縦分割時に文字を右端で折り返す
 (setq truncate-partial-width-windows nil)
 
