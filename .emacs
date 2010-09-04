@@ -24,6 +24,12 @@
 ;; 列番号を表示
 (column-number-mode t)
 
+;; バックアップファイルを作成しない
+(setq make-backup-files nil)
+
+;; 自動保存しない
+(setq auto-save-default nil)
+
 ;; convenient switching between buffers using substrings of their names
 (iswitchb-mode t)
 
