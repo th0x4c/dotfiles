@@ -1,5 +1,6 @@
 PS1='\h:\W \u\$ '
 export PATH=$HOME/local/bin:$PATH
+export CLASSPATH=.:$CLASSPATH
 alias screen='screen -U'
 
 case $OSTYPE in
