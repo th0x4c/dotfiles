@@ -9,6 +9,8 @@ case $OSTYPE in
     export DISPLAY=:0.0
     export MANPATH=/opt/local/share/man:$MANPATH
 
+    export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
+
     export ORACLE_HOME=/opt/oracle/instantclient_10_2
     export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib:$DYLD_LIBRARY_PATH
     export CLASSPATH=$ORACLE_HOME/ojdbc14.jar:$CLASSPATH
