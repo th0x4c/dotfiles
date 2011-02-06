@@ -34,6 +34,10 @@
 ;; convenient switching between buffers using substrings of their names
 (iswitchb-mode t)
 
+;; Show Paren mode.
+;; When Show Paren mode is enabled, any matching parenthesis is highlighted
+(show-paren-mode t)
+
 ;; gdb
 ;; display output from the debugged program in a separate buffer.
 (setq gdb-use-separate-io-buffer t)
@@ -53,8 +57,9 @@
 ;; lisp 読み込み
 (load "init-bm")
 (load "init-cc-mode")
-(load "init-cedet")
-(load "init-jdee")
+; (load "init-cedet")
+; (load "init-jdee")
+(load "init-clojure")
 (load "init-linum")
 (load "init-muse")
 (load "init-ruby")
