@@ -1,3 +1,0 @@
-;; linum
-(require 'linum)
-

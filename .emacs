@@ -12,6 +12,9 @@
 ;; 起動時にメッセージを表示しない
 (setq inhibit-startup-message t)
 
+;; Initial message displayed in *scratch* buffer at startup.
+(setq initial-scratch-message nil)
+
 ;; メニューバーを表示しない
 (menu-bar-mode -1)
 
@@ -60,7 +63,6 @@
 ; (load "init-cedet")
 ; (load "init-jdee")
 (load "init-clojure")
-(load "init-linum")
 (load "init-muse")
 (load "init-ruby")
 (load "init-sh-script")

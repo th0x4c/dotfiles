@@ -19,7 +19,7 @@ case $OSTYPE in
     export NLS_DATE_FORMAT="YYYY-MM-DD HH24:MI:SS"
 
     alias ls='ls -G'
-    alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+    alias emacs='/Applications/MacPorts/Emacs.app/Contents/MacOS/Emacs'
     alias sqlplus='/opt/oracle/instantclient_10_2/sqlplus'
 
     if [ -f /opt/local/etc/bash_completion ]; then
