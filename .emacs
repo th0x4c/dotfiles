@@ -35,7 +35,7 @@
 (setq auto-save-default nil)
 
 ;; convenient switching between buffers using substrings of their names
-(iswitchb-mode t)
+; (iswitchb-mode t) ; anything.el とコンフリクトするのでコメントアウト
 
 ;; Show Paren mode.
 ;; When Show Paren mode is enabled, any matching parenthesis is highlighted
