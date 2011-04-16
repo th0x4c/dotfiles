@@ -60,8 +60,6 @@
 ;; lisp 読み込み
 (load "init-bm")
 (load "init-cc-mode")
-; (load "init-cedet")
-; (load "init-jdee")
 (load "init-clojure")
 (load "init-muse")
 (load "init-ruby")
