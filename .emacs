@@ -58,6 +58,7 @@
   (load "init-color-theme"))
 
 ;; lisp 読み込み
+(load "init-elpa")
 (load "init-bm")
 (load "init-cc-mode")
 (load "init-clojure")

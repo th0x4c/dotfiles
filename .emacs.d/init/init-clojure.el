@@ -1,9 +1,4 @@
-;; clojure
-
-;; clojure-mode
-(add-to-list 'load-path "~/.emacs.d/elisp/clojure")
-(autoload 'clojure-mode "clojure-mode" "A major mode for Clojure" t)
-(add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
+;; Clojure
 
 (setq inferior-lisp-program "lein repl")
 
