@@ -1,8 +1,8 @@
 ;;; -*- Emacs-Lisp -*-
 ;;; Window manager for GNU Emacs.
-;;; $Id: windows.el,v 2.47 2009/10/17 01:49:05 yuuji Exp $
-;;; (c) 1993-2009 by HIROSE Yuuji [yuuji@gentei.org]
-;;; Last modified Sat Oct 17 10:44:41 2009 on firestorm
+;;; $Id: windows.el,v 2.48 2010/05/23 12:33:40 yuuji Exp $
+;;; (c) 1993-2010 by HIROSE Yuuji [yuuji@gentei.org]
+;;; Last modified Sun May 23 21:27:31 2010 on firestorm
 
 ;;;		Window manager for GNU Emacs
 ;;;
@@ -1566,7 +1566,7 @@ Do not call this function."
 ;; Functions for resume.
 ;;;
 (defconst win:revision
-  "$Revision: 2.47 $"
+  "$Revision: 2.48 $"
   "Revision string of windows.el")
 (defvar win:revision-prefix ";win;")
 
@@ -1826,6 +1826,7 @@ Non-nil for optional argument PRESERVE keeps all current buffers."
 	(while (not (frame-visible-p goal)) (sit-for 0))
 	(raise-frame goal)
 	(select-frame goal)
+	(if (fboundp 'x-focus-frame) (x-focus-frame goal))
 	(if (not (eq (selected-frame) goal))
 	    nil
 	  (or win:xemacs-p (unfocus-frame))
@@ -2292,6 +2293,10 @@ If interactive argument KILL is non-nil, kill menu buffer and no select."
 (run-hooks 'win-load-hook)
 
 ;; $Log: windows.el,v $
+;; Revision 2.48  2010/05/23 12:33:40  yuuji
+;; Workaround for frame focus on CarbonEmacs.
+;; Thanks to nabechan.
+;;
 ;; Revision 2.47  2009/10/17 01:49:05  yuuji
 ;; Fix for XEmacs and emacs-20.
 ;;
