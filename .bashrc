@@ -44,8 +44,11 @@ case $OSTYPE in
       *CentOS* )
         export DISPLAY=172.16.167.1:0.0
         export ORACLE_BASE=/u01/app/oracle
-        export ORACLE_SID=orcl11
-        export ORACLE_HOME=$ORACLE_BASE/product/11.1.0/db_1
+        export ORACLE_SID=v11gr2
+        export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/dbhome_1
+        export CLASSPATH=$ORACLE_HOME/jdbc/lib/ojdbc5.jar:$CLASSPATH
+
+        export PATH=$ORACLE_HOME/jdk/bin:$PATH
         ;;
       
       * )
@@ -72,9 +75,13 @@ case $OSTYPE in
     ;;
 
   cygwin* )
-    export PATH=/usr/local/emacs/22.2/bin:/cygdrive/c/ruby/bin:$PATH
+    export PATH=/usr/local/emacs/bin:/cygdrive/c/ruby/bin:$PATH
+    export http_proxy=10.7.66.62:8080
+
+    export NLS_DATE_FORMAT="YYYY-MM-DD HH24:MI:SS"
 
     alias ls='ls --color=auto'
+    alias open='cygstart'
     ;;
 
   * )
