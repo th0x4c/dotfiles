@@ -7,3 +7,8 @@
 ;; 補完メニュー表示時のみC-n/C-pで補完候補を選択する
 (setq ac-use-menu-map t)
 
+;; ac-slime
+(require 'ac-slime)
+(add-hook 'slime-mode-hook 'set-up-slime-ac)
+(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+
