@@ -69,3 +69,4 @@
 (load "init-yasnippet")
 (load "init-anything")
 (load "init-auto-complete")
+(load "init-rsense")
