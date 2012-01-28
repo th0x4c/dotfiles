@@ -62,6 +62,7 @@
 (load "init-bm")
 (load "init-cc-mode")
 (load "init-clojure")
+(load "init-elpa")
 (load "init-ruby")
 (load "init-sh-script")
 (load "init-windows")
