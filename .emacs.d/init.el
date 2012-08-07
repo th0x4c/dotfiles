@@ -52,22 +52,17 @@
 (when run-windows-nt
   (load "init-windows-nt"))
 
-;; TODO
-;; なぜか Mac OS X では color-theme がうまく動かない
-(unless run-darwin
-  (load "init-color-theme"))
-
 ;; lisp 読み込み
 (load "init-elpa")
 (load "init-bm")
 (load "init-cc-mode")
-(load "init-clojure")
-(load "init-eldoc")
-(load "init-ruby")
+;; (load "init-clojure")
+(load "init-c-eldoc")
+;; (load "init-ruby")
 (load "init-sh-script")
 (load "init-windows")
 (load "init-xcscope")
 (load "init-yasnippet")
-(load "init-anything")
+(load "init-helm")
 (load "init-auto-complete")
-(load "init-rsense")
+;; (load "init-rsense")

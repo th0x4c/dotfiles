@@ -1,5 +1,5 @@
 ;; Shell-Script mode
 
-;; The width for further indentation in Shell-Script mode.
-(setq sh-indentation 2)
+;; The default indentation increment.
+(setq sh-basic-offset 2)
 

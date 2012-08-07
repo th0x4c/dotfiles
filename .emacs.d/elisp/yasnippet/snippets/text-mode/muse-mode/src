@@ -1,5 +1,0 @@
-#name : <src>...</src>
-# --
-<src lang="${1:c}">
-$0
-</src>

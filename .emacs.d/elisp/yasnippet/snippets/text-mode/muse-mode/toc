@@ -1,3 +1,0 @@
-#name : <contents depth="...">
-# --
-<contents depth="${1:2}">
