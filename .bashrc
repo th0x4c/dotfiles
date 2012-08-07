@@ -1,12 +1,11 @@
 PS1='\h:\W \u\$ '
-export PATH=$HOME/local/bin:$PATH
+export PATH=$HOME/local/bin:/usr/local/bin:$PATH
 export CLASSPATH=.:$CLASSPATH
 alias screen='screen -U'
 
 case $OSTYPE in
   darwin* )
     alias ls='ls -G'
-    alias emacs="/usr/local/Cellar/emacs/24.1/Emacs.app/Contents/MacOS/Emacs"
 
     if [ -f /usr/local/etc/bash_completion ]; then
       . /usr/local/etc/bash_completion
