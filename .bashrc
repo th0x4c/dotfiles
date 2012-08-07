@@ -5,25 +5,11 @@ alias screen='screen -U'
 
 case $OSTYPE in
   darwin* )
-    export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-    export DISPLAY=:0.0
-    export MANPATH=/opt/local/share/man:$MANPATH
-
-    export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
-
-    export ORACLE_HOME=/opt/oracle/instantclient_10_2
-    export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib:$DYLD_LIBRARY_PATH
-    export CLASSPATH=$ORACLE_HOME/ojdbc14.jar:$CLASSPATH
-    export TNS_ADMIN=$HOME/.oracle.d/network/admin
-    export NLS_LANG=Japanese_Japan.UTF8
-    export NLS_DATE_FORMAT="YYYY-MM-DD HH24:MI:SS"
-
     alias ls='ls -G'
-    alias emacs='/Applications/MacPorts/Emacs.app/Contents/MacOS/Emacs'
-    alias sqlplus='/opt/oracle/instantclient_10_2/sqlplus'
+    alias emacs="/usr/local/Cellar/emacs/24.1/Emacs.app/Contents/MacOS/Emacs"
 
-    if [ -f /opt/local/etc/bash_completion ]; then
-      . /opt/local/etc/bash_completion
+    if [ -f /usr/local/etc/bash_completion ]; then
+      . /usr/local/etc/bash_completion
     fi
     ;;
 

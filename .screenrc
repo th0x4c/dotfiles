@@ -19,6 +19,7 @@ bind -c REGION \^ resize
 bind  command -c REGION
 
 defbce on
-term xterm-color
+# term xterm-color
+term xterm-256color
 
 # rendition so "+rb .W"
