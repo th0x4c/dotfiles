@@ -10,6 +10,8 @@ case $OSTYPE in
     if [ -f /usr/local/etc/bash_completion ]; then
       . /usr/local/etc/bash_completion
     fi
+
+    export JRUBY_OPTS="-Xcext.enabled=true"
     ;;
 
   linux* )
