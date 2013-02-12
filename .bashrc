@@ -12,6 +12,9 @@ case $OSTYPE in
     fi
 
     export JRUBY_OPTS="-Xcext.enabled=true"
+
+    export DYLD_LIBRARY_PATH=$HOME/local/instantclient_11_2
+    export ORACLE_HOME=$HOME/.oracle.d
     ;;
 
   linux* )
