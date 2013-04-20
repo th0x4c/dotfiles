@@ -60,6 +60,7 @@
 (load "init-c-eldoc")
 ;; (load "init-ruby")
 (load "init-sh-script")
+(load "init-window-resizer")
 (load "init-windows")
 (load "init-xcscope")
 (load "init-yasnippet")
