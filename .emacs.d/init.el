@@ -55,9 +55,10 @@
 ;; lisp 読み込み
 (load "init-elpa")
 (load "init-bm")
+(load "init-c-eldoc")
 (load "init-cc-mode")
 ;; (load "init-clojure")
-(load "init-c-eldoc")
+(load "init-cua-mode")
 ;; (load "init-ruby")
 (load "init-sh-script")
 (load "init-window-resizer")
