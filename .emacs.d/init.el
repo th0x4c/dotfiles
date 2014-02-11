@@ -54,6 +54,7 @@
 
 ;; lisp 読み込み
 (load "init-elpa")
+(load "init-ace-jump-mode")
 (load "init-bm")
 (load "init-c-eldoc")
 (load "init-cc-mode")

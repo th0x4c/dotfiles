@@ -1,6 +1,7 @@
 ;; windows
 (add-to-list 'load-path "~/.emacs.d/elisp/windows")
 
+(setq win:quick-selection nil)  ;; Not assign `C-c LETTER'
 (require 'windows)
 (win:startup-with-window)
 (define-key ctl-x-map "C" 'see-you-again)
