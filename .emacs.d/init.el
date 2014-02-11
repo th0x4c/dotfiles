@@ -59,6 +59,7 @@
 (load "init-cc-mode")
 ;; (load "init-clojure")
 (load "init-cua-mode")
+(load "init-multiple-cursors")
 ;; (load "init-ruby")
 (load "init-sh-script")
 (load "init-window-resizer")
