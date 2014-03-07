@@ -37,6 +37,10 @@
 ;; convenient switching between buffers using substrings of their names
 ; (iswitchb-mode t) ; anything.el とコンフリクトするのでコメントアウト
 
+;; buffer names are uniquified with parts of directory name.
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+
 ;; Show Paren mode.
 ;; When Show Paren mode is enabled, any matching parenthesis is highlighted
 (show-paren-mode t)
