@@ -34,9 +34,6 @@
 ;; 自動保存しない
 (setq auto-save-default nil)
 
-;; convenient switching between buffers using substrings of their names
-; (iswitchb-mode t) ; anything.el とコンフリクトするのでコメントアウト
-
 ;; buffer names are uniquified with parts of directory name.
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
@@ -62,10 +59,8 @@
 (load "init-bm")
 (load "init-c-eldoc")
 (load "init-cc-mode")
-;; (load "init-clojure")
 (load "init-cua-mode")
 (load "init-multiple-cursors")
-;; (load "init-ruby")
 (load "init-sh-script")
 (load "init-window-resizer")
 (load "init-windows")
@@ -73,7 +68,6 @@
 (load "init-yasnippet")
 (load "init-helm")
 (load "init-auto-complete")
-;; (load "init-rsense")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
