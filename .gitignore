@@ -1,3 +1,4 @@
 .DS_Store
 /.emacs.d/ac-comphist.dat
 /.emacs.d/elpa/archives/*/archive-contents
+/.emacs.d/url/
