@@ -11,7 +11,7 @@ bind  paste .
 bind o focus
 
 bind -c REGION 2 split
-# bind -c REGION 3 split -v
+bind -c REGION 3 split -v
 bind -c REGION 1 only
 bind -c REGION 0 remove
 bind -c REGION o focus
@@ -22,4 +22,4 @@ defbce on
 # term xterm-color
 term xterm-256color
 
-# rendition so "+rb .W"
+rendition so "+rb .w"
