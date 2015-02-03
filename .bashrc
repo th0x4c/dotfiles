@@ -38,8 +38,6 @@ case $OSTYPE in
         export ORACLE_SID=v11gr2
         export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/dbhome_1
         export CLASSPATH=$ORACLE_HOME/jdbc/lib/ojdbc5.jar:$CLASSPATH
-
-        export PATH=$ORACLE_HOME/jdk/bin:$PATH
         ;;
       
       * )
