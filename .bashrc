@@ -44,14 +44,14 @@ case $OSTYPE in
         ;;
     esac
 
-    if [ -n "$ORACLE_HOME" ];then
+    if [ -n "$ORACLE_HOME" ]; then
       export PATH=$ORACLE_HOME/bin:$PATH
       export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
     fi
     export NLS_LANG=Japanese_Japan.UTF8
     export NLS_DATE_FORMAT="YYYY-MM-DD HH24:MI:SS"
 
-    if [ $TERM == "dumb" ];then
+    if [ $TERM == "dumb" ]; then
       alias ls='ls -F'
     else
       alias ls='ls --color=auto'
