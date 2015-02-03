@@ -59,6 +59,7 @@
 (load "init-bm")
 (load "init-c-eldoc")
 (load "init-cc-mode")
+(load "init-cperl-mode")
 (load "init-cua-mode")
 (load "init-multiple-cursors")
 (load "init-sh-script")
