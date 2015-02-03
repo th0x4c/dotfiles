@@ -76,3 +76,7 @@ case $OSTYPE in
     ;;
 esac
 
+# Source local definitions
+if [ -f $HOME/.bashrc.local ]; then
+  . $HOME/.bashrc.local
+fi
