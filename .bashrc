@@ -32,6 +32,8 @@ case $OSTYPE in
         ;;
 
       *CentOS* )
+        export LANG=en_US.UTF-8
+
         export ORACLE_BASE=/u01/app/oracle
         export ORACLE_SID=v11gr2
         export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/dbhome_1
@@ -48,7 +50,7 @@ case $OSTYPE in
       export PATH=$ORACLE_HOME/bin:$PATH
       export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
     fi
-    export NLS_LANG=Japanese_Japan.UTF8
+    export NLS_LANG=American_America.UTF8
     export NLS_DATE_FORMAT="YYYY-MM-DD HH24:MI:SS"
 
     if [ $TERM == "dumb" ]; then
