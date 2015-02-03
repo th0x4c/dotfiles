@@ -21,5 +21,6 @@ bind  command -c REGION
 defbce on
 # term xterm-color
 term xterm-256color
+termcapinfo xterm* 'Co#256:pa#32767:AB=\E[48;5;%dm:AF=\E[38;5;%dm:'
 
 rendition so "+rb .w"
