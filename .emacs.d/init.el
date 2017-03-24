@@ -5,6 +5,13 @@
 ;;   `cygwin'      compiled using the Cygwin library.
 ;; 使用例
 ;;   (when run-darwin (load "foo"))
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (defvar run-linux (equal system-type 'gnu/linux))  ;GNU/Linux
 (defvar run-darwin (equal system-type 'darwin))	   ;Mac OS X
 (defvar run-windows-nt (equal system-type 'windows-nt)) ;Windows
@@ -72,4 +79,17 @@
 (load "init-auto-complete")
 
 (custom-set-faces
- '(default ((t (:background "black" :foreground "white")))))
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:background "black" :foreground "white"))))
+ '(cscope-line-face ((((class color) (background light)) (:foreground "white")))))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode ac-cider))))
