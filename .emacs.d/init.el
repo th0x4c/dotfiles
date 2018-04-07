@@ -63,6 +63,7 @@
 ;; lisp 読み込み
 (load "init-elpa")
 (load "init-ace-jump-mode")
+(load "init-anzu")
 (load "init-bm")
 (load "init-c-eldoc")
 (load "init-cc-mode")
@@ -93,4 +94,4 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode ac-cider))))
+    (anzu expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode ac-cider))))
