@@ -69,6 +69,7 @@
 (load "init-clojure")
 (load "init-cperl-mode")
 (load "init-cua-mode")
+(load "init-expand-region")
 (load "init-multiple-cursors")
 (load "init-sh-script")
 (load "init-window-resizer")
@@ -92,4 +93,4 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode ac-cider))))
+    (expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode ac-cider))))
