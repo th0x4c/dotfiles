@@ -68,6 +68,7 @@
 (load "init-c-eldoc")
 (load "init-cc-mode")
 (load "init-clojure")
+(load "init-counsel")
 (load "init-cperl-mode")
 (load "init-cua-mode")
 (load "init-expand-region")
@@ -94,4 +95,4 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (anzu expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode ac-cider))))
+    (counsel anzu expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode ac-cider))))
