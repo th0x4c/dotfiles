@@ -1,10 +1,14 @@
 ;;; spinner-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "spinner" "spinner.el" (22741 10741 0 0))
-;;; Generated autoloads from spinner.el
+;;;### (autoloads nil "spinner" "../../../../../.emacs.d/elpa/spinner-1.7.3/spinner.el"
+;;;;;;  "8d874ccdf25de57d5cadb4ad8ad2fe0d")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/spinner-1.7.3/spinner.el
 
 (autoload 'spinner-create "spinner" "\
 Create a spinner of the given TYPE.
@@ -56,6 +60,20 @@ displaying the spinner. It is safe to cancel the spinner before
 this time, in which case it won't display at all.
 
 \(fn &optional TYPE-OR-OBJECT FPS DELAY)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "spinner" "../../../../../.emacs.d/elpa/spinner-1.7.3/spinner.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/spinner-1.7.3/spinner.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "spinner" '("spinner")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/spinner-1.7.3/spinner-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/spinner-1.7.3/spinner.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -63,5 +81,6 @@ this time, in which case it won't display at all.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; spinner-autoloads.el ends here

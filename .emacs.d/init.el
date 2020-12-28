@@ -79,7 +79,6 @@
 (load "init-xcscope")
 (load "init-yasnippet")
 (load "init-helm")
-(load "init-auto-complete")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -94,5 +93,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (counsel anzu expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode ac-cider))))
+   '(cider counsel anzu expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode)))
