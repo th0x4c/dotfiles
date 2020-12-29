@@ -68,6 +68,7 @@
 (load "init-c-eldoc")
 (load "init-cc-mode")
 (load "init-clojure")
+(load "init-company-mode")
 (load "init-counsel")
 (load "init-cperl-mode")
 (load "init-cua-mode")
@@ -93,4 +94,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(cider counsel anzu expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode)))
+   '(company cider counsel anzu expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode)))
