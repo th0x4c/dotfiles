@@ -73,6 +73,7 @@
 (load "init-cperl-mode")
 (load "init-cua-mode")
 (load "init-expand-region")
+(load "init-lsp-mode")
 (load "init-multiple-cursors")
 (load "init-sh-script")
 (load "init-window-resizer")
@@ -94,4 +95,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(company cider counsel anzu expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode)))
+   '(lsp-ui lsp-mode company cider counsel anzu expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode)))

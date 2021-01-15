@@ -4,6 +4,7 @@
 /.emacs.d/elpa/archives/*/archive-contents
 /.emacs.d/elpa/archives/*/archive-contents.signed
 /.emacs.d/elpa/gnupg/
+/.emacs.d/.lsp-session-v1
 /.emacs.d/recentf
 /.emacs.d/tramp
 /.emacs.d/url/
