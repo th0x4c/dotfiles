@@ -6,3 +6,4 @@
 (require 'lsp-mode)
 (add-hook 'c-mode-hook #'lsp)
 (add-hook 'ruby-mode-hook #'lsp)
+(add-hook 'rust-mode-hook #'lsp)

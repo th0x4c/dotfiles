@@ -76,6 +76,10 @@ case $OSTYPE in
     ;;
 esac
 
+if [ -f $HOME/.cargo/env ]; then
+  . $HOME/.cargo/env
+fi
+
 # Source local definitions
 if [ -f $HOME/.bashrc.local ]; then
   . $HOME/.bashrc.local
