@@ -72,8 +72,8 @@
 (load "init-counsel")
 (load "init-cperl-mode")
 (load "init-cua-mode")
+(load "init-eglot")
 (load "init-expand-region")
-(load "init-lsp-mode")
 (load "init-multiple-cursors")
 (load "init-rust-mode")
 (load "init-sh-script")
@@ -95,4 +95,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(rust-mode lsp-ui lsp-mode company cider counsel anzu expand-region yasnippet paredit multiple-cursors c-eldoc bm ace-jump-mode)))
+   '(ace-jump-mode anzu bm c-eldoc cider company counsel expand-region
+                   multiple-cursors paredit rust-mode yasnippet)))
