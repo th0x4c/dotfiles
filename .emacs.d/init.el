@@ -75,6 +75,7 @@
 (load "init-eglot")
 (load "init-expand-region")
 (load "init-multiple-cursors")
+(load "init-python")
 (load "init-rust-mode")
 (load "init-sh-script")
 (load "init-window-resizer")
@@ -96,4 +97,5 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    '(ace-jump-mode anzu bm c-eldoc cider company counsel expand-region
-                   multiple-cursors paredit rust-mode yasnippet)))
+                   multiple-cursors paredit ruff-format rust-mode
+                   yasnippet)))
