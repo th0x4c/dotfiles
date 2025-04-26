@@ -81,7 +81,6 @@
 (load "init-windows")
 (load "init-xcscope")
 (load "init-yasnippet")
-(load "init-helm")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -96,4 +95,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(rust-mode lsp-ui lsp-mode company cider counsel anzu expand-region yasnippet paredit multiple-cursors helm c-eldoc bm ace-jump-mode)))
+   '(rust-mode lsp-ui lsp-mode company cider counsel anzu expand-region yasnippet paredit multiple-cursors c-eldoc bm ace-jump-mode)))
